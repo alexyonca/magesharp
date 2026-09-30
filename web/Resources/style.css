@@ -76,3 +76,50 @@
       max-width: 100%;
       height: auto;
     }
+  
+    /*seccion de conocenos*/
+    /*barra de scroll bar derecha para conocenos*/
+    #conocenos {
+      overflow-y: auto;
+      max-height: 400px;
+    }
+ 
+    .contenedor-perfil{
+      margin: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      height: 250px;
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+      .contenedor-foto{
+        margin:1rem;
+        width: 15%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+      
+      .contenedor-datos{
+        margin:1rem;
+        width: 85%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+
+    .contenedor-proyecto1 , .contenedor-proyecto2, .contenedor-proyecto3{
+      margin: 2.5rem 2.5rem 0rem;
+      display: flex;
+      flex-direction: row;
+      height: 200px;
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+
