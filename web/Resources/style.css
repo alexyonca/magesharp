@@ -1,3 +1,11 @@
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
     /* --Barra de navegación-- */
     .navbar {
       position: sticky;
@@ -32,7 +40,6 @@
       color: #000000;
       border-bottom-color: #0b0037;
     }
-    /* Botón hamburguesa (solo en móvil) */
     .menu-toggle {
       display: none;
       background: none;
@@ -63,18 +70,133 @@
       height: auto;
     }
     .about {
-      display:flex;
+      display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 2rem;
+      justify-content: center;
+      gap: 4rem;
+      padding: 4rem 2rem 2rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto 4rem auto;
+      flex-wrap: wrap; 
     }
     .about-text {
-      flex:1;
+      flex: 1 1 500px; 
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .about-text h2 {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+    .about-text ul {
+      margin-left: 1.5rem;
+      padding-left: 0;
+    }
+    .about-text li {
+      margin-bottom: 0.5rem;
     }
     .about-image {
-      width: 250px;
-      max-width: 100%;
+      flex: 0 0 350px; 
+      display: flex;
+      justify-content: center;
+    }
+    .about-image img {
+      width: 100%;
+      max-width: 350px;
       height: auto;
+    }
+    
+    /* Frame style around logo */
+    .logo-frame {
+      position: relative;
+      padding: 1.5rem;
+    }
+    .logo-frame img {
+      border: 2px solid #333;
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+    .logo-frame::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      border-top: 4px solid #333;
+      border-right: 4px solid #333;
+    }
+    .logo-frame::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border-bottom: 4px solid #333;
+      border-left: 4px solid #333;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #0b0037;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .btn-primary:hover {
+      background-color: #1a0066;
+    }
+    
+    /* Action Sections */
+    .action-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 0 auto 3rem auto;
+      padding: 0 2rem;
+    }
+    .action-content h2 {
+      font-size: 1.5rem;
+      margin: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .action-content p {
+      margin: 0.5rem 0 0 0;
+      font-style: italic;
+      color: #555;
+    }
+    .btn-outline {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      border: 3px solid #333;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      letter-spacing: 1px;
+    }
+    .btn-outline:hover {
+      background: #333;
+      color: #fff;
+    }
+
+    /* Mobile adjustments for Action sections */
+    @media (max-width: 600px) {
+      .action-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+      }
     }
   
     /*seccion de conocenos*/
