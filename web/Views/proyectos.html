@@ -11,17 +11,27 @@
     <a href="../../index.html" class="logo">
       <img src="../img/logoempresa.png" alt="MageSharp">
     </a>
-    <button class="menu-toggle" id="menu-toggle" arial-label="abrir menu" airad-expanded="false">
+    <button class="menu-toggle" id="menu-toggle" aria-label="abrir menu" aria-expanded="false">
     ☰
     </button>
     <ul class="nav-links" id="navLinks">
       <li><a href="../../index.html">Inicio</a></li>
       <li><a href="demos.html">Demos</a></li>
       <li><a href="proyectos.html" class="active">Proyectos</a></li>
-      <li><a href="conocenos.html">Conocenos</a></li>
+      <li><a href="conocenos.html">Conócenos</a></li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
   </nav>
     
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('navLinks');
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+    }
+  </script>
 </body>
 </html>
+
