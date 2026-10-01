@@ -105,16 +105,16 @@
       max-width: 350px;
       height: auto;
     }
-    .logo-frame {
+    .mockup-frame {
       position: relative;
       padding: 1.5rem;
     }
-    .logo-frame img {
+    .mockup-frame img {
       border: 2px solid #333;
       padding: 1.5rem;
       box-sizing: border-box;
     }
-    .logo-frame::before {
+    .mockup-frame::before {
       content: "";
       position: absolute;
       top: 0;
@@ -124,7 +124,7 @@
       border-top: 4px solid #333;
       border-right: 4px solid #333;
     }
-    .logo-frame::after {
+    .mockup-frame::after {
       content: "";
       position: absolute;
       bottom: 0;
@@ -137,7 +137,7 @@
 
     .btn-primary {
       display: inline-block;
-      margin-top: 1.5rem;
+      
       padding: 0.75rem 1.5rem;
       background-color: #0b0037;
       color: #ffffff;
@@ -235,3 +235,25 @@
       border-radius: 10px;
     }
 
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #0b0037;
+  color: #0b0037;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+.btn-secondary:hover {
+  background: #0b0037;
+  color: #fff;
+}
