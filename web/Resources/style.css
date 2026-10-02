@@ -11,6 +11,7 @@
       position: sticky;
       top: 0;
       display: flex;
+      z-index: 100;
       align-items: center;
       justify-content: space-between;
       padding: 0 1.5rem;
@@ -263,7 +264,6 @@
 }
 
 /*---Ivan aca esta el boton de whatsapp---*/
-/* -- Botón flotante de WhatsApp -- */
 .wa-float {
   position: fixed;
   width: 60px;
