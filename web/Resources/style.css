@@ -20,9 +20,9 @@
       padding: 0 1.5rem;
       height: 64px;
       background: rgb(155, 29, 48);
-      border: 5px solid white;
+      border: 5px solid #DAC0A7;
       border-radius: 40px;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid  #DAC0A7;
     }
     .logo img{
       height: 64px;
@@ -43,7 +43,7 @@
     .nav-links a:hover,
     .nav-links a:focus-visible,
     .nav-links a.active {
-      color: #DAC0A7;
+      color: #ffff;
       border-bottom-color: white;
     }
     .menu-toggle {
@@ -64,7 +64,7 @@
         right: 0;
         flex-direction: column;
         gap: 0;
-        background: #ffffff;
+        background:  #DAC0A7;
         padding: .5rem 1.5rem 1rem;
       }
       .nav-links.open { display: flex; }
@@ -205,13 +205,13 @@
       overflow-y: auto;
       max-height: 400px;
     }
-    
     .contenedor-titulo{
         margin: 2.5rem;
         padding-top: 0.05rem;
         align-items: center;
         justify-content: center;
-        height: 200px;
+        min-height: 200px;
+        padding-bottom: 1.5rem;
         text-align: center;
         background-color: rgb(22, 0, 41);
         border-radius: 15px;
@@ -378,4 +378,161 @@
 .wa-float:hover {
   background-color: #128c7e;
   color: #FFF;
+}
+
+/* --- Secciones Plantillas y Portafolio --- */
+.page-header {
+  text-align: center;
+  margin: 3rem 1.5rem;
+}
+.page-header h1 {
+  font-family: "Vampiro One", system-ui;
+  font-size: 3.5rem;
+  color: rgb(155, 29, 48);
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 0px white;
+}
+.page-header p {
+  color: rgb(22, 0, 41);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Grid General */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+}
+
+/* Tarjetas de Plantillas */
+.template-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 3px solid rgb(22, 0, 41);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+.template-card:hover {
+  transform: translateY(-5px);
+}
+.template-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 3px solid rgb(22, 0, 41);
+}
+.template-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.template-content h3 {
+  margin: 0 0 1rem 0;
+  color: rgb(155, 29, 48);
+  font-size: 1.5rem;
+}
+.template-content ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  flex-grow: 1;
+  font-weight: bold;
+}
+.template-actions {
+  display: flex;
+  gap: 1rem;
+}
+.template-actions a {
+  flex: 1;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.8rem 0.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btn-demo {
+  background: rgb(22, 0, 41);
+  color: white;
+}
+.btn-demo:hover {
+  background: #000;
+}
+.btn-buy {
+  border: 2px solid rgb(22, 0, 41);
+  color: rgb(22, 0, 41);
+}
+.btn-buy:hover {
+  background: rgb(22, 0, 41);
+  color: white;
+}
+
+/* Tarjetas de Portafolio (Proyectos) */
+.portfolio-card {
+  background: rgb(22, 0, 41);
+  color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  border: 2px solid rgb(198, 159, 137);
+}
+.portfolio-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.portfolio-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.portfolio-content h3 {
+  color: rgb(198, 159, 137);
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+.portfolio-content p {
+  color: #eee;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+.portfolio-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.portfolio-tags span {
+  background: rgb(155, 29, 48);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.btn-visit {
+  background: rgb(198, 159, 137);
+  color: rgb(22, 0, 41);
+  text-align: center;
+  padding: 0.8rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.btn-visit:hover {
+  background: white;
 }
