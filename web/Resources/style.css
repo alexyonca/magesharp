@@ -2,7 +2,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: Transparent;
       color: #333;
     }
 
@@ -15,8 +15,10 @@
       justify-content: space-between;
       padding: 0 1.5rem;
       height: 64px;
-      background: #ffffff;
-      border-bottom: 1px solid #000000;
+      background: rgb(155, 29, 48);
+      border: 5px solid white;
+      border-radius: 40px;
+      border-bottom: 1px solid white;
     }
     .logo img{
       height: 64px;
@@ -29,7 +31,7 @@
       list-style: none;
     }
     .nav-links a {
-      color: #000000;
+      color: #DAC0A7;
       text-decoration: none;
       padding: .4rem 0;
       border-bottom: 2px solid transparent;
@@ -37,14 +39,14 @@
     .nav-links a:hover,
     .nav-links a:focus-visible,
     .nav-links a.active {
-      color: #000000;
-      border-bottom-color: #0b0037;
+      color: #DAC0A7;
+      border-bottom-color: white;
     }
     .menu-toggle {
       display: none;
       background: none;
       border: 0;
-      color: #000000;
+      color: #DAC0A7;
       font-size: 1.75rem;
       cursor: pointer;
     }
