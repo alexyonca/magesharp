@@ -286,8 +286,19 @@
       }
 
       #conocenos .contenedor-titulo h1 {
-        font-size: clamp(2rem, 9vw, 3.5rem);
+        font-size: clamp(1.65rem, 9vw, 3.5rem);
         line-height: 1.2;
+      }
+
+      #conocenos .contenedor-titulo h1 svg {
+        width: clamp(1.5rem, 7vw, 2.5rem);
+        height: auto;
+      }
+
+      #conocenos .contenedor-titulo h3 {
+        font-size: clamp(0.875rem, 3.7vw, 1rem);
+        line-height: 1.5;
+        overflow-wrap: anywhere;
       }
 
       #conocenos .contenedor-perfil {
@@ -296,6 +307,7 @@
         margin: 1rem;
         flex-direction: column;
         gap: 1rem;
+        overflow-wrap: anywhere;
       }
 
       #conocenos .contenedor-foto,
@@ -315,6 +327,7 @@
         min-height: 200px;
         margin: 1rem;
         flex-direction: column;
+        overflow-wrap: anywhere;
       }
     }
 
