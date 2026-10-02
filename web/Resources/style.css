@@ -201,7 +201,7 @@
       }
     }
     /* --Sección de Conócenos-- */
-    #conócenos {
+    #conocenos {
       overflow-y: auto;
       max-height: 400px;
     }
@@ -270,6 +270,52 @@
       height: 200px;
       border: 1px solid black;
       border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+      #conocenos {
+        max-height: none;
+        overflow-y: visible;
+      }
+
+      #conocenos .contenedor-titulo {
+        box-sizing: border-box;
+        height: auto;
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      #conocenos .contenedor-titulo h1 {
+        font-size: clamp(2rem, 9vw, 3.5rem);
+        line-height: 1.2;
+      }
+
+      #conocenos .contenedor-perfil {
+        box-sizing: border-box;
+        height: auto;
+        margin: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      #conocenos .contenedor-foto,
+      #conocenos .contenedor-datos {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        min-height: 120px;
+        margin: 0;
+      }
+
+      #conocenos .contenedor-proyecto1,
+      #conocenos .contenedor-proyecto2,
+      #conocenos .contenedor-proyecto3 {
+        box-sizing: border-box;
+        height: auto;
+        min-height: 200px;
+        margin: 1rem;
+        flex-direction: column;
+      }
     }
 
 
