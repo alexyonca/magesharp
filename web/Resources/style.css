@@ -1,3 +1,6 @@
+/* --Importación de fuentes-- */
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Isometra&family=Molle:ital@1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vampiro+One&display=swap');
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
@@ -202,15 +205,33 @@
       overflow-y: auto;
       max-height: 400px;
     }
-
+    
     .contenedor-titulo{
-      margin: 2.5rem;
-      align-items: center;
-      justify-content: center;
-      height: 100px;
-      border: 1px solid black;
-      border-radius: 10px;
-    }
+        margin: 2.5rem;
+        padding-top: 0.05rem;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        text-align: center;
+        background-color: rgb(22, 0, 41);
+        border-radius: 15px;
+      }
+    .contenedor-titulo h1{
+        color: rgb(198, 159, 137);
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 4rem;
+        font-family: "Vampiro One", system-ui;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    .contenedor-titulo h3{
+        margin-top: 5px;
+        color: rgb(198, 159, 137);
+        font-size: 1rem;
+        font-family: "Isometra", system-ui;
+        font-weight: bold;
+      }
 
     .contenedor-perfil{
       margin: 2.5rem;
