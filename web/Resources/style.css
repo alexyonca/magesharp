@@ -259,3 +259,30 @@
   background: #0b0037;
   color: #fff;
 }
+
+/*---Ivan aca esta el boton de whatsapp---*/
+/* -- Botón flotante de WhatsApp -- */
+.wa-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366; /* Color verde de WhatsApp */
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.wa-float:hover {
+  background-color: #128c7e;
+  color: #FFF;
+}
