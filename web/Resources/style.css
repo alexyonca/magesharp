@@ -196,10 +196,21 @@
         gap: 1.5rem;
       }
     }
+    /* --Sección de Conócenos-- */
     #conócenos {
       overflow-y: auto;
       max-height: 400px;
     }
+
+    .contenedor-titulo{
+      margin: 2.5rem;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+
     .contenedor-perfil{
       margin: 2.5rem;
       display: flex;
