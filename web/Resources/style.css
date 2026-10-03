@@ -205,33 +205,6 @@
       overflow-y: auto;
       max-height: 400px;
     }
-    .contenedor-titulo{
-        margin: 2.5rem;
-        padding-top: 0.05rem;
-        align-items: center;
-        justify-content: center;
-        min-height: 200px;
-        padding-bottom: 1.5rem;
-        text-align: center;
-        background-color: rgb(22, 0, 41);
-        border-radius: 15px;
-      }
-    .contenedor-titulo h1{
-        color: rgb(198, 159, 137);
-        margin-top: 10px;
-        margin-bottom: 0px;
-        font-size: 4rem;
-        font-family: "Vampiro One", system-ui;
-        font-weight: bold;
-        text-transform: uppercase;
-      }
-    .contenedor-titulo h3{
-        margin-top: 5px;
-        color: rgb(198, 159, 137);
-        font-size: 1rem;
-        font-family: "Isometra", system-ui;
-        font-weight: bold;
-      }
 
     .contenedor-perfil{
       margin: 2.5rem;
@@ -276,29 +249,6 @@
       #conocenos {
         max-height: none;
         overflow-y: visible;
-      }
-
-      #conocenos .contenedor-titulo {
-        box-sizing: border-box;
-        height: auto;
-        margin: 1rem;
-        padding: 1rem;
-      }
-
-      #conocenos .contenedor-titulo h1 {
-        font-size: clamp(1.65rem, 9vw, 3.5rem);
-        line-height: 1.2;
-      }
-
-      #conocenos .contenedor-titulo h1 svg {
-        width: clamp(1.5rem, 7vw, 2.5rem);
-        height: auto;
-      }
-
-      #conocenos .contenedor-titulo h3 {
-        font-size: clamp(0.875rem, 3.7vw, 1rem);
-        line-height: 1.5;
-        overflow-wrap: anywhere;
       }
 
       #conocenos .contenedor-perfil {
