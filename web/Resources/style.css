@@ -490,4 +490,150 @@
 }
 .btn-visit:hover {
   background: white;
+<<<<<<< HEAD
+=======
+}
+
+/* --- Sección de Contacto --- */
+
+.contacto-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 8%; 
+  padding: 60px 5%; 
+  min-height: 75vh; 
+}
+.contacto-container > section {
+  flex: 1; 
+  max-width: 600px; 
+  width: 100%;
+}
+
+.caja-derecha {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacto-info h2 {
+  font-size: 2.5rem; 
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.contacto-info p {
+  font-size: 1.3rem; 
+  line-height: 1.6;
+}
+
+.contacto-container section:first-child {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+}
+
+.contacto-container section:first-child img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.redes-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.redes-lista a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 25px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.4rem; 
+  transition: transform 0.2s, background-color 0.2s;
+  min-width: 260px; 
+}
+
+.redes-lista a i {
+  font-size: 1.8rem; 
+}
+
+.btn-correo {
+  justify-content: space-between;
+}
+
+.redes-lista a:hover {
+  transform: translateY(-2px);   
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.redes-lista a:nth-child(1) {
+  margin-left: 0px;
+}
+
+.redes-lista a:nth-child(2) {
+  margin-left: 35px; 
+}
+
+.redes-lista a:nth-child(3) {
+  margin-left: 70px; 
+}
+
+.logo-circular-wrapper {
+  position: relative;
+  width: 300px;
+  max-width: 400px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-curvo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-circulo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 2px solid #ccc; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo-circulo img {
+  max-width: 70%; 
+  border-radius: 0;
+  margin-top: 0; 
+>>>>>>> 503eaa2 (Vista contacto hecha mas estilos, aun cambios por confirmar)
 }
